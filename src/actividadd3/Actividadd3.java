@@ -18,9 +18,9 @@ public class Actividadd3 {
      */
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        System.out.println("***************************************************");
-        System.out.println("**********          Bienvenido           **********");
-        System.out.println("***************************************************");
+        System.out.println("---------------------------------------------------");
+        System.out.println("----------          Bienvenido           ----------");
+        System.out.println("---------------------------------------------------");
         System.out.println("");
         System.out.println("Puedes escoger un numero de esta lista:");
         System.out.println("");
@@ -48,60 +48,60 @@ public class Actividadd3 {
 
             case 1:
                 System.out.println("");
-                System.out.println("********************************************");
-                System.out.println("**********    Suma del 1 al 10    **********");
-                System.out.println("********************************************");
+                System.out.println("--------------------------------------------");
+                System.out.println("----------    Suma del 1 al 10    ----------");
+                System.out.println("*-------------------------------------------");
                 System.out.println("");
                 suma();
                 break;
             case 2:
                 System.out.println("");
-                System.out.println("********************************************");
-                System.out.println("**********    Factorial del 10    **********");
-                System.out.println("********************************************");
+                System.out.println("--------------------------------------------");
+                System.out.println("----------    Factorial del 10    ----------");
+                System.out.println("--------------------------------------------");
                 System.out.println("");
                 factorial();
                 break;
             case 3:
                 System.out.println("");
-                System.out.println("*********************************************");
-                System.out.println("**********        Factorial        **********");
-                System.out.println("*********************************************");
+                System.out.println("---------------------------------------------");
+                System.out.println("----------        Factorial        ----------");
+                System.out.println("---------------------------------------------");
                 System.out.println("");
                 System.out.print("Introduce un número para calcular el factorial: ");
                 entradaFactorial(entrada.nextInt());
                 break;
             case 4:
                 System.out.println("");
-                System.out.println("*********************************************");
-                System.out.println("**********          Media          **********");
-                System.out.println("*********************************************");
+                System.out.println("---------------------------------------------");
+                System.out.println("----------          Media          ----------");
+                System.out.println("---------------------------------------------");
                 System.out.println("");
                 System.out.print("Introduce un número para calcular la media: ");
                 media(entrada.nextDouble());
                 break;
             case 5:
                 System.out.println("");
-                System.out.println("********************************************");
-                System.out.println("**********        Promedio        **********");
-                System.out.println("********************************************");
+                System.out.println("--------------------------------------------");
+                System.out.println("----------        Promedio        ----------");
+                System.out.println("--------------------------------------------");
                 System.out.println("");
                 System.out.print("Introduce la cantidad de números que deseas introducir: ");
                 sumaPromedio(entrada.nextInt());
                 break;
             case 6:
                 System.out.println("");
-                System.out.println("*********************************************");
-                System.out.println("**********    Dias de la semana    **********");
-                System.out.println("*********************************************");
+                System.out.println("---------------------------------------------");
+                System.out.println("----------    Dias de la semana    ----------");
+                System.out.println("---------------------------------------------");
                 System.out.println("");
                 diaSemana();
                 break;
             case 7:
                 System.out.println("");
-                System.out.println("********************************************");
-                System.out.println("**********     cuadrado 3 * 3     **********");
-                System.out.println("********************************************");
+                System.out.println("--------------------------------------------");
+                System.out.println("----------     cuadrado 3 * 3     ----------");
+                System.out.println("--------------------------------------------");
                 System.out.println("");
                 gato();
                 break;
@@ -204,7 +204,7 @@ public class Actividadd3 {
         }
 
         promedio = (double)suma / (double)numero;
-        diferencia = mayor - menor;
+        diferencia = mayor * menor;
 
         System.out.println("La cantidad de numeros introducidos fueron : " + numero);
         System.out.println("El promedio de los numeros introducidos es de: " + promedio);
@@ -240,7 +240,7 @@ public class Actividadd3 {
 
         for(String vertical[]: gato){
             for(String horizontal: vertical){
-                System.out.print("+" + " ");
+                System.out.print("-" + " ");
             }
             System.out.println("");
         }
